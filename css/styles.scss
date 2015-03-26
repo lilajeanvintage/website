@@ -7,6 +7,7 @@
 html {
   font-family: Georgia, Times, 'Times New Roman', serif;
   background: #fafafa;
+  color: #333;
 }
 
 .hidden {
@@ -40,10 +41,11 @@ html {
 }
 
 .nav__close_cta {
+  display: none;
   position: fixed;
   z-index: 101;
-  top: 20px;
-  right: 20px;
+  top: 53px;
+  right: 33px;
   width: 20px;
   height: 20px;
 
@@ -53,6 +55,7 @@ html {
 }
 
 .nav__items {
+  display: none;
   position: fixed;
   background: #fafafa;
   z-index: 100;
@@ -62,7 +65,7 @@ html {
   width: 100%;
   margin: 0;
   text-align: center;
-  padding: 3em 0 0 0;
+  padding: 40px 0 0 0;
 
   li {
     padding: 1em 0;
@@ -165,4 +168,52 @@ footer {
 
 .copyright {
   font-size: .7em;
+}
+
+@media (min-width: 800px) {
+
+  .header {
+    min-height: 160px;
+  }
+
+  .header__logo {
+    width: 200px;
+  }
+
+  .image_cta {
+    float: left;
+    width: 33.333333%;
+
+    &:hover {
+      cursor: pointer;
+
+    }
+  }
+
+  .image_cta__text,
+  .image_cta__text--two_lines {
+    font-size: 24px;
+  }
+
+  .just_text_section {
+    width: 100%;
+    float: left;
+    padding: 4em 20%;
+
+    p {
+      font-size: 1.5em;
+    }
+  }
+
+  footer {
+    float: left;
+    width: 100%;
+    margin-top: 4.5em;
+  }
+
+  .follow {
+    padding: 3em 0;
+  }
+
+
 }

@@ -1,6 +1,9 @@
 $(document).ready(function () {
+    var elm = $('.nav__close_cta, .nav__items');
+
     $('#jsShowNav').click(function () {
-        $('#jsMainNav').removeClass('hidden');
+
+        elm.velocity("fadeIn", {duration: 300, display: "block"});
 
         $('html, body').css({
             'overflow': 'hidden',
@@ -13,7 +16,9 @@ $(document).ready(function () {
             'overflow': 'auto',
             'height': 'auto'
         });
-        
+
         $('#jsMainNav').addClass('hidden');
+        elm.velocity("fadeOut", {duration: 300});
+
     });
 });
