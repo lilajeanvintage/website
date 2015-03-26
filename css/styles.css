@@ -409,7 +409,8 @@ html {
   width: 100%;
   margin: 0;
   text-align: center;
-  padding: 40px 0 0 0; }
+  padding: 40px 0 0 0;
+  list-style: none; }
   .nav__items li {
     padding: 1em 0; }
   .nav__items a {
