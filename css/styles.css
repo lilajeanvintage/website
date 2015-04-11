@@ -507,12 +507,27 @@ footer {
 .copyright {
   font-size: .7em; }
 
+.main_article {
+  margin: 0 1em 2em; }
+  .main_article h1 {
+    font-size: 1.3em;
+    margin: 1.5em 0; }
+  .main_article h2 {
+    font-size: 1.2em;
+    margin: 0 0 .4em; }
+  .main_article p {
+    margin: 0 0 1em;
+    line-height: 1.5em; }
+
 @media (min-width: 800px) {
   .header {
     min-height: 160px; }
 
   .header__logo {
     width: 200px; }
+
+  .header--with_bg {
+    background-size: cover; }
 
   .image_cta {
     float: left;
@@ -530,6 +545,10 @@ footer {
     padding: 4em 20%; }
     .just_text_section p {
       font-size: 1.5em; }
+
+  .main_article {
+    width: 500px;
+    margin: 0 auto; }
 
   footer {
     float: left;

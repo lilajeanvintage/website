@@ -194,6 +194,26 @@ footer {
   font-size: .7em;
 }
 
+.main_article {
+  margin: 0 1em 2em;
+
+  h1 {
+    font-size: 1.3em;
+    margin: 1.5em 0;
+  }
+
+  h2 {
+    font-size: 1.2em;
+    margin: 0 0 .4em;
+  }
+
+  p {
+    margin: 0 0 1em;
+    line-height: 1.5em;
+  }
+
+}
+
 @media (min-width: 800px) {
 
   .header {
@@ -202,6 +222,10 @@ footer {
 
   .header__logo {
     width: 200px;
+  }
+
+  .header--with_bg {
+    background-size: cover;
   }
 
   .image_cta {
@@ -229,6 +253,11 @@ footer {
     }
   }
 
+  .main_article {
+    width: 500px;
+    margin: 0 auto;
+  }
+
   footer {
     float: left;
     width: 100%;
@@ -238,4 +267,6 @@ footer {
   .follow {
     padding: 3em 0;
   }
+
+
 }
