@@ -365,6 +365,9 @@ html {
   color: #333;
   -webkit-font-smoothing: antialiased; }
 
+a {
+  color: #857992; }
+
 .hidden {
   display: none; }
 
@@ -468,7 +471,7 @@ html {
     margin: 0;
     text-align: center; }
 
-footer {
+.footer--primary {
   text-align: center;
   color: #fff;
   overflow: auto;
@@ -515,9 +518,24 @@ footer {
   .main_article h2 {
     font-size: 1.2em;
     margin: 0 0 .4em; }
-  .main_article p {
+  .main_article p, .main_article blockquote {
     margin: 0 0 1em;
     line-height: 1.5em; }
+
+.quote {
+  margin: 0 0 3em;
+  padding: 0 0 0 1em;
+  border-left: 5px solid #f0f0f0; }
+
+.quote--reverse {
+  text-align: right;
+  border-left: none;
+  padding: 0 1em 0 0;
+  border-right: 5px solid #f0f0f0; }
+
+.quote__footer {
+  background: none;
+  padding: 1em 0 0; }
 
 @media (min-width: 800px) {
   .header {
@@ -529,11 +547,19 @@ footer {
   .header--with_bg {
     background-size: cover; }
 
+  .image_cta__bg {
+    transition: all 0.5s ease; }
+
   .image_cta {
     float: left;
-    width: 33.333333%; }
+    width: 33.333333%;
+    background: #857992;
+    overflow: hidden; }
     .image_cta:hover {
       cursor: pointer; }
+      .image_cta:hover .image_cta__bg {
+        opacity: .2;
+        transform: scale(1.05); }
 
   .image_cta__text,
   .image_cta__text--two_lines {
@@ -550,7 +576,7 @@ footer {
     width: 500px;
     margin: 0 auto; }
 
-  footer {
+  .footer--primary {
     float: left;
     width: 100%;
     margin-top: 4.5em; }
