@@ -219,6 +219,15 @@ a {
   }
 }
 
+.article_figure__img {
+  width: 100%;
+}
+
+.article_figure__caption {
+  text-align: center;
+  font-style: italic;
+}
+
 .quote {
   margin: 0 0 3em;
   padding: 0 0 0 1em;
@@ -292,6 +301,11 @@ a {
   .main_article {
     width: 500px;
     margin: 0 auto;
+  }
+
+  .article_figure {
+    width: 700px;
+    margin: 1em 0 1em -100px;
   }
 
   .footer--primary {
