@@ -593,6 +593,8 @@ a {
   .desktop_two_column {
     width: 600px;
     margin: 0 0 0 -50px; }
+    .desktop_two_column img {
+      width: 200px; }
 
   .desktop_left_column {
     text-align: left;
