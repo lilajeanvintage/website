@@ -540,6 +540,9 @@ a {
   padding: 0 1em 0 0;
   border-right: 5px solid #f0f0f0; }
 
+.desktop_left_column {
+  text-align: center; }
+
 .quote__footer {
   background: none;
   padding: 1em 0 0; }
@@ -586,6 +589,20 @@ a {
   .article_figure {
     width: 700px;
     margin: 1em 0 1em -100px; }
+
+  .desktop_two_column {
+    width: 600px;
+    margin: 0 0 0 -50px; }
+
+  .desktop_left_column {
+    text-align: left;
+    width: 220px;
+    display: inline-block; }
+
+  .desktop_right_column {
+    width: 375px;
+    display: inline-block;
+    vertical-align: top; }
 
   .footer--primary {
     float: left;
