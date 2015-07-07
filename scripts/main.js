@@ -19,6 +19,10 @@ $(document).ready(function () {
 
         $('#jsMainNav').addClass('hidden');
         elm.velocity("fadeOut", {duration: 300});
+    });
 
+    $('.promo-banner__cta').click(function () {
+        var url = $(this).attr('data-url');
+        window.open(url, '_blank');
     });
 });

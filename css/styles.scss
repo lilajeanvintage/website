@@ -254,6 +254,31 @@ a {
   padding: 1em 0 0;
 }
 
+.promo-banner {
+  background: $purple;
+  padding: 2em 1em;
+  text-align: center;
+  color: #fff;
+
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+.promo-banner__header {
+  color: #fff;
+  margin: 0;
+}
+
+.promo-banner__cta {
+  border: none;
+  background: #fff;
+  color: $purple;
+  padding: .5em 2em;
+  font-weight: bold;
+}
+
 @media (min-width: 800px) {
 
   .header {
@@ -345,6 +370,4 @@ a {
   .follow {
     padding: 3em 0;
   }
-
-
 }
